@@ -5,7 +5,14 @@ export default function CardGrid({ actors }) {
     <div className="container">
       <div className="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
         {actors.map((actor) => (
-          <Card key={actor.id} name={actor.name} image={actor.image} />
+          <Card
+            key={actor.id}
+            name={actor.name}
+            image={actor.image}
+            birth_year={actor.birth_year}
+            nationality={actor.nationality}
+            biography={actor.biography}
+          />
         ))}
       </div>
     </div>
