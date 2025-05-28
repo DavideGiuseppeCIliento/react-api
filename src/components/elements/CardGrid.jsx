@@ -1,17 +1,17 @@
 import Card from "./Card";
 
-export default function CardGrid({ actors }) {
+export default function CardGrid({ data }) {
   return (
     <div className="container">
       <div className="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
-        {actors.map((actor) => (
+        {data.map((data) => (
           <Card
-            key={actor.id}
-            name={actor.name}
-            image={actor.image}
-            birth_year={actor.birth_year}
-            nationality={actor.nationality}
-            biography={actor.biography}
+            key={data.id}
+            name={data.name}
+            image={data.image}
+            birth_year={data.birth_year}
+            nationality={data.nationality}
+            biography={data.biography}
           />
         ))}
       </div>
